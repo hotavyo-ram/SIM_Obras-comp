@@ -166,15 +166,15 @@
         map.addLayer(layer_GoogleSatellite_0);
         map.createPane('pane_OSMStandard_1');
         map.getPane('pane_OSMStandard_1').style.zIndex = 401;
-        var layer_OSMStandard_1 = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        var layer_OSMStandard_1 = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
             pane: 'pane_OSMStandard_1',
             opacity: 0.3,
-            subdomains: 'abcd',
-            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abc',
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/">HOT</a>',
             minZoom: 1,
             maxZoom: 22,
             minNativeZoom: 0,
-            maxNativeZoom: 20
+            maxNativeZoom: 19
 
         });
         layer_OSMStandard_1;
